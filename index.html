@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertex Classes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Made weight => wght at 400 it can be changeable  -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- <img src="./light pink.jpg" alt="background-img" id="background-img" /> -->
+
+    <div id="login-container-id" class="login-container">
+      <!-- Username is Roll No. 
+            password is given before exams (VertexClasses@2023) -->
+
+      <div id="login-institute-logo" class="login-container-objects">
+        <img
+          src="./8865bf6327856f2d3a09093e89e1eacb.jpeg"
+          alt="VertexClasseslogo"
+          id="vertex-class-login-logo"
+        />
+      </div>
+
+      <div id="login-header" class="login-container-objects">
+        <p class="login-text-paras">Login into your account</p>
+      </div>
+
+      <div id="login-form-container" class="login-container-objects">
+        <form action="./Question.html" method="post"></form>
+        <input
+          type="text"
+          id="login-Username"
+          placeholder="UserName"
+          class="login-form-inputs"
+          required
+        />
+
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Password"
+          class="login-form-inputs"
+          required
+        />
+
+        <button id="Login-btn">Login</button>
+      </div>
+    </div>
+
+    <div id="display-container" class="hide display-container-class">
+      <div class="header">
+        <div id="No-of-Attempted-Question" class="question-header-block">
+          <span id="Attemped-Question-count"> 1 of 4 Question </span>
+        </div>
+
+        <div id="timer-container" class="question-header-block">
+          <img
+            src="./clock alarm logo.jpg"
+            alt="alarm-clock"
+            id="alarm-clock"
+            class="timer-items"
+          />
+          <span id="timer-time" class="timer-items">10s</span>
+        </div>
+      </div>
+
+      <div id="horizontal-line-container">
+        <hr />
+      </div>
+
+      <div id="Question-content-container"></div>
+
+      <div id="btn-container">
+        <button id="finish-btn" class="display-container-btns">Finish</button>
+        <button id="next-btn" class="display-container-btns">Next</button>
+      </div>
+    </div>
+
+    <div class="hide result-container">
+      <div id="show-result">Demo Score</div>
+
+      <button id="restart-btn">Restart</button>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

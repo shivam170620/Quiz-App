@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  /* background-image: url(./light\ blue\ little\ cyan.jpg); */
+  /* background-size: cover; */
+
+  /* Background-size is put to cover the image fully  */
+}
+
+/* #background-img {
+  object-fit: fill;
+  height: 100vh;
+  width: 100vw;
+
+  position: sticky;
+} */
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 93vh;
+  width: 100vw;
+  background-color: rgb(165, 210, 195);
+}
+
+/* .main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 93vh;
+  width: 100vw;
+  background-color: rgb(165, 210, 195);
+} */
+
+.login-page-header {
+  position: relative;
+  top: 10%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(55, 55, 209);
+  text-shadow: 2px 2px 2px rgb(183, 124, 124);
+}
+
+/* Login Page  */
+
+/* .main-container > #login-container { */
+body > .login-container,
+#display-container {
+  width: 28%;
+  height: 54%;
+  margin: auto;
+  background-color: white;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+.login-container > .login-container-objects {
+  width: 80%;
+}
+
+.login-container > #login-header {
+  height: 10%;
+  position: relative;
+  bottom: 5%;
+}
+
+.login-container > #login-institute-logo {
+  height: 15%;
+  display: block;
+  justify-content: center;
+}
+
+.login-container > #login-form-container {
+  height: 55%;
+}
+
+.login-container > #login-institute-logo > #vertex-class-login-logo {
+  height: 70%;
+  width: 45%;
+
+  margin: 0px 27.5%;
+  margin-top: 10px;
+}
+
+#vertex-class-login-logo {
+  height: 40px;
+  width: 150px;
+}
+
+.login-text-paras {
+  font-size: 22px;
+
+  font-family: "Times New Roman", Times, serif;
+  /* position: relative;
+  bottom: 20px; */
+  color: rgb(80, 80, 80);
+}
+
+/* Login-Form-Container */
+
+#login-form-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  bottom: 5%;
+}
+
+#login-form-container > .login-form-inputs {
+  height: 22%;
+
+  width: 90%;
+  border: solid 2px rgb(67, 65, 65);
+  border-radius: 5px;
+  /* background-color: rgb(165, 210, 195); */
+}
+
+#Login-btn {
+  height: 24%;
+
+  width: 150px;
+  border: solid 3px rgb(68, 113, 113);
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: rgb(165, 210, 195);
+  cursor: pointer;
+}
+
+#Login-btn :visited {
+  background-color: rgb(139, 158, 158);
+}
+
+#Login-btn :hover {
+  background-color: rgb(9, 93, 93);
+}
+/* Styling input placeholder */
+
+/* .login-form-inputs ::placeholder {
+  font-size: 16px;
+  color: red;
+  margin-left: 10px;
+} */
+
+::-webkit-input-placeholder {
+  /* text-align: center; */
+  margin-left: 15px;
+  color: black;
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
+:-moz-placeholder {
+  /* text-align: center; */
+  color: black;
+  margin-left: 15px;
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
+input[type="password"] {
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
+/* Display Container  -  result container */
+
+/* Display Container  */
+
+/* Alarm Clock */
+
+body > #display-container {
+  width: 34%;
+  height: 72%;
+  margin: auto;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.header > .question-header-block {
+  margin-top: 3%;
+  margin-left: 2%;
+}
+
+.header > #No-of-Attempted-Question {
+  width: 40%;
+}
+
+.header > #timer-container {
+  width: 22%;
+  height: 50px;
+  background-color: rgb(231, 210, 231);
+  border: solid 2px rgb(227, 146, 227);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#alarm-clock {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: solid 2px white;
+  margin-top: 3%;
+}
+
+#timer-time {
+  font-size: 24px;
+  position: relative;
+  top: 20%;
+
+  /* position: relative;
+  bottom: 20%; */
+}
+
+/* Count of questions  */
+
+#No-of-Attempted-Question {
+  display: flex;
+  flex-direction: column;
+  justify-content: Center;
+}
+
+#No-of-Attempted-Question > #Attemped-Question-count {
+  position: relative;
+  top: 10%;
+  font-size: 22px;
+  color: rgb(148, 146, 145);
+}
+
+/* Questions segment & options   */
+
+#display-container > #Question-content-container {
+  height: 63%;
+}
+
+/* horizontal line */
+
+#horizontal-line-container {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+hr {
+  width: 76.6%;
+  position: relative;
+  left: 1%;
+  border: solid 1px rgb(193, 188, 188);
+}
+
+/* Display Container Buttons  */
+#display-container > #btn-container {
+  height: 8%;
+}
+
+#btn-container {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.display-container-btns {
+  height: 50px;
+  width: 90px;
+  background-color: rgb(231, 210, 231);
+  border: solid 2px rgb(227, 146, 227);
+  border-radius: 7px;
+  font-size: 18px;
+}
+
+/* Question-set-content - container  */
+
+/* // div - Question-content-container 
+  // div - Question - set - all -container  * 10
+  // {  }
+
+ // div - Question - set - all -container{}  */
+
+.Question-set-all-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 3%;
+}
+
+.Question-text {
+  margin-bottom: 8px;
+}
+
+.choices {
+  height: 45px;
+  margin-top: 10px;
+  font-size: 17px;
+  /* color: rgb(231, 210, 231); */
+
+  background-color: rgb(243, 239, 239);
+  /* background-color: rgb(210, 237, 228);
+
+  border: solid 2px rgb(227, 146, 227); */
+  border: solid 2px rgb(81, 80, 80);
+
+  cursor: pointer;
+}
+
+.Question-set-all-container > .Q-parts {
+  width: 80%;
+}
+
+/* Correct , Incorrect  */
+
+.correct {
+  background-color: rgb(189, 248, 189);
+}
+
+.incorrect {
+  background-color: rgb(233, 174, 174);
+}
+
+/* Finish - Next Buttons */
+
+.display-container-btns {
+  cursor: pointer;
+}
+
+/* Result container */
+
+.result-container {
+  display: block;
+
+  justify-content: space-around;
+  margin: auto;
+  background-color: rgb(231, 210, 231);
+  border: solid 2px rgb(227, 146, 227);
+}
+
+#show-result {
+  font-size: 24px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#restart-btn {
+  height: 55px;
+  width: 95px;
+  /* background-color: rgb(231, 210, 231);
+  border: solid 2px rgb(227, 146, 227); */
+  border-radius: 7px;
+  font-size: 18px;
+  /* margin: auto; */
+  position: relative;
+  left: 35%;
+  bottom: 30px;
+  margin-top: 10px;
+
+  border: solid 3px rgb(68, 113, 113);
+  border-radius: 5px;
+  /* margin-top: 15px; */
+  background-color: rgb(165, 210, 195);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
